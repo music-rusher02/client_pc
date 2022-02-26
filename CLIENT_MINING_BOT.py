@@ -2,7 +2,7 @@ import socket
 import time as t
 connection = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 IP = input("Введите IP адрес вашего устройства: ")
-PORT = 12333
+PORT = input("Введите PORT вашего устройства: ")
 connection.connect((IP, PORT))
 rd = connection.recv(1024)
 print(rd.decode('utf8'))
