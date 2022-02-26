@@ -7,6 +7,6 @@ connection.connect((IP, PORT))
 rd = connection.recv(1024)
 print(rd.decode('utf8'))
 while True:
-	connection.send("И тебе привет!".encode('utf8'))
-	t.sleep(2)
+	send_sms = input()
+	connection.send(send_sms.encode('utf8'))
 #connection.close()
