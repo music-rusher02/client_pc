@@ -1,7 +1,7 @@
 import socket
 import time as t
 connection = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-IP = socket.gethostbyname(socket.gethostname())
+IP = input("Введите IP адрес вашего устройства: ")
 PORT = 12333
 connection.connect((IP, PORT))
 rd = connection.recv(1024)
